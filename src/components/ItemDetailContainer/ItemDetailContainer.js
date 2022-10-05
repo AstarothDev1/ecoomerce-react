@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
         }).finally(()=>{
             setLoading(false)
         })
-        
+
     },[])
     
     console.log(product)
@@ -33,6 +33,7 @@ const ItemDetailContainer = () => {
                 <h1>{product?.name}</h1>
                 <h2>{product?.category}</h2>
                 <h3>{product?.price}</h3>
+                <img src={product?.img} />
             </div>
         </div>
     )

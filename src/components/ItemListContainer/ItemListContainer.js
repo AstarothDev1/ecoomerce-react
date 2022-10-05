@@ -2,6 +2,7 @@ import {useState,useEffect} from "react";
 import { getProducts } from "../../asyncmock";
 import ItemList from "../ItemList/ItemList";
 import {useParams } from 'react-router-dom';
+import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -27,7 +28,7 @@ const ItemListContainer = () => {
 
 
     return(
-        <div>
+        <div className="ItemListContainer">
             <h1>Todos nuestros productos!!</h1>
             <ItemList products={products}/>
         </div>
