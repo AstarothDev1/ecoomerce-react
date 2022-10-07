@@ -3,29 +3,37 @@
     justify-content: space-between;
     align-items: center;
     padding:   10px 120px;
-    background: #EDE3DA;
+    background: #E1ED23;
     }
     .Title{
-      color:black;
-      
+      transition: 2s;
     }
     
-  
     .Buttons {
-      background: #EDE3DA;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
      
     }
   
     .Option {
+      color: #000;
+      text-decoration: none;
       cursor: pointer;
       border: none;
-      margin-right: 12px;
+      margin: 12px 12px;
       border-radius: 4px;
-      width: 74px;
-      height: 36px; 
-      
+      padding: 12px;
     }
     .Option:hover {
-      background-color:#AEB6BF ;
-      color: black;
+      background-color:#000 ;
+      color: white;
   }
+ 
+.img {
+  width: 100px;
+}
+.Title:hover{
+  background-color:#000 ;
+  border-radius: 100px;
+}
